@@ -40,6 +40,9 @@ jobs:
         mkdir -p $HOME/.kube
         echo "${{ secrets.KUBECONFIG }}" | base64 --decode > $HOME/.kube/config
 
+    - name: List files
+      run: ls -l
+      
     - name: Deploy to Kubernetes
       run: |
         kubectl apply -f ./deployment.yml
