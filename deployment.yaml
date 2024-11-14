@@ -17,7 +17,7 @@ spec:
         #image: myusername/my-flask-app:latest
         #image: registry.gitlab.com/<your-username>/<your-repository>:$CI_COMMIT_SHA
         #image: $CI_REGISTRY_IMAGE:$CI_COMMIT_SHORT_SHA
-        image: <YOUR_DOCKERHUB_USERNAME>/flask_app:latest
+        image: ivan1845/flask_app:latest
         ports:
         - containerPort: 5000
 ---
