@@ -26,7 +26,7 @@ kind: Service
 metadata:
   name: flask-app-service
 spec:
-  type: LoadBalancer # или LoadBalancer в зависимости от среды
+  type: NodePort # или LoadBalancer в зависимости от среды
   ports:
     - protocol: TCP
       port: 80
